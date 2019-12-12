@@ -5,6 +5,9 @@ import { Link, graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Features from '../components/Features'
 import BlogRoll from '../components/BlogRoll'
+import InstaRoll from '../components/InstaRoll'
+
+import instagram from '../img/social/instagram.svg'
 
 export const IndexPageTemplate = ({
   image,
@@ -37,11 +40,11 @@ export const IndexPageTemplate = ({
         }}
       >
         <h1
-          className="has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen"
+          className="has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen title"
           style={{
             boxShadow:
-              'rgb(255, 68, 0) 0.5rem 0px 0px, rgb(255, 68, 0) -0.5rem 0px 0px',
-            backgroundColor: 'rgb(255, 68, 0)',
+              'rgb(249,152,8) 0.5rem 0px 0px, rgb(249,152,8) -0.5rem 0px 0px',
+            backgroundColor: 'rgb(249,152,8)',
             color: 'white',
             lineHeight: '1',
             padding: '0.25em',
@@ -53,8 +56,8 @@ export const IndexPageTemplate = ({
           className="has-text-weight-bold is-size-5-mobile is-size-5-tablet is-size-4-widescreen"
           style={{
             boxShadow:
-              'rgb(255, 68, 0) 0.5rem 0px 0px, rgb(255, 68, 0) -0.5rem 0px 0px',
-            backgroundColor: 'rgb(255, 68, 0)',
+              'rgb(249,152,8) 0.5rem 0px 0px, rgb(249,152,8) -0.5rem 0px 0px',
+            backgroundColor: 'rgb(249,152,8)',
             color: 'white',
             lineHeight: '1',
             padding: '0.25em',
@@ -70,33 +73,46 @@ export const IndexPageTemplate = ({
           <div className="columns">
             <div className="column is-10 is-offset-1">
               <div className="content">
-                <div className="content">
+                {/* <div className="content">
                   <div className="tile">
                     <h1 className="title">{mainpitch.title}</h1>
                   </div>
                   <div className="tile">
                     <h3 className="subtitle">{mainpitch.description}</h3>
                   </div>
-                </div>
-                <div className="columns">
+                </div> */}
+                {/* <div className="columns">
                   <div className="column is-12">
                     <h3 className="has-text-weight-semibold is-size-2">
                       {heading}
                     </h3>
                     <p>{description}</p>
                   </div>
-                </div>
-                <Features gridItems={intro.blurbs} />
-                <div className="columns">
+                </div> */}
+                {/* <Features gridItems={intro.blurbs} /> */}
+                {/* <div className="columns">
                   <div className="column is-12 has-text-centered">
                     <Link className="btn" to="/products">
                       See all products
                     </Link>
                   </div>
+                </div> */}
+                <div className="column is-12">
+                  <h1 className="has-text-weight-semibold" style={{display: "flex", justifyContent: "flex-start", alignItems: "center"}}>
+                    <img
+                      src={instagram}
+                      alt="Instagram"
+                      style={{ height: '1em' }}
+                    />
+                    <a className="subtitle has-text-primary" href={`https://www.instagram.com/prolocoerli`} style={{ marginLeft: '1rem'}}>
+                        <strong>@prolocoerli</strong> su Instagram</a>
+                  </h1>
+               
+                  <InstaRoll />
                 </div>
                 <div className="column is-12">
                   <h3 className="has-text-weight-semibold is-size-2">
-                    Latest stories
+                    Le ultime notizie
                   </h3>
                   <BlogRoll />
                   <div className="column is-12 has-text-centered">
@@ -177,7 +193,7 @@ export const pageQuery = graphql`
           blurbs {
             image {
               childImageSharp {
-                fluid(maxWidth: 240, quality: 64) {
+                fluid {
                   ...GatsbyImageSharpFluid
                 }
               }

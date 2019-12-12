@@ -29,6 +29,12 @@ module.exports = {
         name: 'images',
       },
     },
+    {
+      resolve: `gatsby-source-instagram`,
+      options: {
+        username: `prolocoerli`,
+      },
+    },
     'gatsby-plugin-sharp',
     'gatsby-transformer-sharp',
     {
