@@ -71,6 +71,9 @@ const Navbar = class extends React.Component {
               <Link className="navbar-item" to="/contact/examples">
                 Form Examples
               </Link> */}
+              <a className="navbar-item has-text-primary" href="http://armaveirana.it/">
+                Arma Veirana
+              </a>
             </div>
           </div>
         </div>
