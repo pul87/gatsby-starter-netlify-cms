@@ -3,14 +3,12 @@ templateKey: event-post
 title: Auguri di Fine Anno 🎄
 date: 2019-12-27T23:00:00.000Z
 featuredpost: false
-featuredimage: /img/flavor_wheel.jpg
+featuredimage: /img/natale-1.png
 description: 
 tags:
-  - eventi
-  - sagra
-  - polenta
+  - natale
 ---
-![flavor wheel](/img/flavor_wheel.jpg)
+![flavor wheel](/img/natale-2.png)
 
 Cari amici e soci, venerdì 27 dopo la messa in onore di San Giovanni ci ritroveremo presso la sede della proloco per gli auguri di fine anno.
 
@@ -23,4 +21,4 @@ Siete tutti invitati a partecipare.
 Il consiglio direttivo Vi Ringrazia tutti e molto per l'impegno che anche quest'anno avete presraro in proloco a favore del Paese.
 Auguriamo a Voi e alle vostre famiglie un sereno Natale e a tutti ogni bene anche per il nuovo anno.
 
-*Gai Massimo*, Consiglio direttivo.
+*Consiglio direttivo.*

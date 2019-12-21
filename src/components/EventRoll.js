@@ -38,7 +38,9 @@ class EventRoll extends React.Component {
                     </Link>
                     <br></br>
                     <span className="subtitle is-size-5 is-block">
+                      <strong>
                       {post.frontmatter.date}
+                      </strong>
                     </span>
                   </p>
                 </header>
@@ -84,7 +86,7 @@ export default () => (
               frontmatter {
                 title
                 templateKey
-                date(formatString: "MMMM DD, YYYY")
+                date(formatString: "DD/MM/YYYY")
                 featuredpost
                 featuredimage {
                   childImageSharp {

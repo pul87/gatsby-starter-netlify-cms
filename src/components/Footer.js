@@ -4,8 +4,6 @@ import { Link } from 'gatsby'
 import logo from '../img/logo_proloco_clean.svg'
 import facebook from '../img/social/facebook.svg'
 import instagram from '../img/social/instagram.svg'
-import twitter from '../img/social/twitter.svg'
-import vimeo from '../img/social/vimeo.svg'
 
 const Footer = class extends React.Component {
   render() {
@@ -14,7 +12,7 @@ const Footer = class extends React.Component {
         <div className="content has-text-centered">
           <img
             src={logo}
-            alt="Kaldi"
+            alt="Logo Proloco Erli"
             style={{ width: '16em', height: '10em' }}
           />
         </div>
@@ -31,27 +29,12 @@ const Footer = class extends React.Component {
                     </li>
                     <li>
                       <Link className="navbar-item" to="/about">
-                        About
+                        Chi siamo
                       </Link>
                     </li>
                     <li>
-                      <Link className="navbar-item" to="/products">
-                        Products
-                      </Link>
-                    </li>
-                    <li>
-                      <Link className="navbar-item" to="/contact/examples">
-                        Form Examples
-                      </Link>
-                    </li>
-                    <li>
-                      <a
-                        className="navbar-item"
-                        href="/admin/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        Admin
+                      <a className="navbar-item" href="http://armaveirana.it" target="__blank">
+                        Arma Veirana
                       </a>
                     </li>
                   </ul>
@@ -62,14 +45,14 @@ const Footer = class extends React.Component {
                   <ul className="menu-list">
                     <li>
                       <Link className="navbar-item" to="/blog">
-                        Latest Stories
+                        Notizie
                       </Link>
                     </li>
-                    <li>
+                    {/* <li>
                       <Link className="navbar-item" to="/contact">
-                        Contact
+                        Contatti
                       </Link>
-                    </li>
+                    </li> */}
                   </ul>
                 </section>
               </div>
